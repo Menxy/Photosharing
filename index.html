@@ -12,19 +12,42 @@
         <div class="container">
             <div class="logo">Photo <span>Cage app</span></div>
             <nav>
-                <div class="nav__item"><img src="src/nav_1.png" alt="N" class="nav__img"> Home </div>
-                <div class="nav__item"><img src="src/nav_2.png" alt="N" class="nav__img"> Gallery</div>
-                <div class="nav__item"><img src="src/nav_3.png" alt="N" class="nav__img"> Members</div>
-                <div class="nav__item"><img src="src/nav_4.png" alt="N" class="nav__img"> Logout</div>
+                <div class="nav__cage">
+                    <a href="#" class="nav__item">
+                        <img src="src/nav_1.png" alt="N" class="nav__img">
+                        <span class="nav__text">Home</span></a>
+                </div>
+                <div class="nav__cage">
+                    <a href="#" class="nav__item">
+                        <img src="src/nav_2.png" alt="N" class="nav__img">
+                        <div class="nav__text">Gallery</div>
+                    </a>
+                </div>
+                <div class="nav__cage">
+                    <a href="#" class="nav__item">
+                        <img src="src/nav_3.png" alt="N" class="nav__img">
+                        <div class="nav__text">Members</div>
+                    </a>
+                </div>
+                <div class="nav__cage">
+                    <a href="#" class="nav__item">
+                        <img src="src/nav_4.png" alt="N" class="nav__img">
+                        <div class="nav__text">Logout</div>
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
     <main>
-        <div class="container">
-            <form action="#" method="POST" enctype="multipart/form-data">
-                <div class="form__h">Please select an image from your computer</div>
-                <input type="file" name="file">
-                <button type="submit">Upload image</button>
+        <div class="form__container">
+            <form class="form__base" action="#" method="POST" enctype="multipart/form-data">
+                <div class="form__title">Please select an image from your computer</div>
+                <div class="form__input">
+                    <div class="form__select">
+                        <input type="file" name="file" accept=".jpg, .jpeg, .png" multiple>
+                    </div>
+                    <button type="button" class="form__submit">Upload image</button>
+                </div>
             </form>
         </div>
         <div class="container">
